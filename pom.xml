@@ -7,7 +7,7 @@ See the README for more information.
 
     <groupId>de.fabiankeller.palladio-headless</groupId>
     <artifactId>palladio-bridge</artifactId>
-    <version>0.2.0</version>
+    <version>0.3.0</version>
     <packaging>eclipse-plugin</packaging>
 
     <name>Palladio Headless Bridge</name>
