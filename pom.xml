@@ -104,35 +104,6 @@ See the README for more information.
                     </altDeploymentRepository>
                 </configuration>
             </plugin>
-
-            <!-- deployment to github -->
-            <plugin>
-                <groupId>com.github.github</groupId>
-                <artifactId>site-maven-plugin</artifactId>
-                <version>0.11</version>
-                <configuration>
-                    <!-- git commit message -->
-                    <message>Maven artifacts for ${project.version}</message>
-                    <!-- disable webpage processing -->
-                    <noJekyll>true</noJekyll>
-                    <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
-                    <branch>refs/heads/mvn-repo</branch>
-                    <includes>
-                        <include>**/*</include>
-                    </includes>
-                    <repositoryName>palladio-headless-bridge-mvn</repositoryName>
-                    <repositoryOwner>FaKeller</repositoryOwner>
-                </configuration>
-                <executions>
-                    <!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->
-                    <execution>
-                        <goals>
-                            <goal>site</goal>
-                        </goals>
-                        <phase>deploy</phase>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
 
