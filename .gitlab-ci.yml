@@ -6,4 +6,5 @@ build-jar:
 deploy-jar:
   stage: deploy
   script:
-    - echo "Deploy"
+    - chmod +x ./bin/deploy.sh
+    - ./bin/deploy.sh
