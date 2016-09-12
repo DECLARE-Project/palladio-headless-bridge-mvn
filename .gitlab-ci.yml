@@ -1,0 +1,9 @@
+build-jar:
+  stage: build
+  script:
+    - mvn clean deploy
+
+deploy-jar:
+  stage: deploy
+  script:
+    - echo "Deploy"
