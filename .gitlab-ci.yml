@@ -2,13 +2,8 @@ build-jar:
   stage: build
   script:
     - mvn clean deploy
-  tags:
-    - java8
-
-deploy-jar:
-  stage: deploy
-  script:
     - chmod +x ./bin/deploy.sh
     - ./bin/deploy.sh
   tags:
+    - java8
     - fk_deploy
